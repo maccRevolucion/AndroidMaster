@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/azul_oscuro"
+    tools:context=".discountapp.DiscountActivity">
+
+    <TextView
+        android:id="@+id/titulo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/calcular_descuentos"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:textSize="20sp"
+        android:textColor="@color/semiwhite_text"/>
+
+    <TextView
+        android:id="@+id/txtPrecio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="@string/precio_unitario"
+        android:textColor="@color/semiwhite_text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.059"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/titulo" />
+
+    <EditText
+        android:id="@+id/tbxPrecio"
+        android:layout_width="225dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="14dp"
+        android:layout_marginTop="12dp"
+        android:autofillHints="Precio por unidad"
+        android:backgroundTint="@color/semiwhite_text"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:textColor="@color/semiwhite_text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.384"
+        app:layout_constraintStart_toEndOf="@+id/txtPrecio"
+        app:layout_constraintTop_toBottomOf="@+id/titulo" />
+
+    <TextView
+        android:id="@+id/txtCantidad"
+        android:layout_width="57dp"
+        android:layout_height="17dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="40dp"
+        android:text="@string/cantidad"
+        app:layout_constraintStart_toStartOf="parent"
+        android:textColor="@color/semiwhite_text"
+        app:layout_constraintTop_toBottomOf="@+id/txtPrecio" />
+
+    <EditText
+        android:id="@+id/tbxCantidad"
+        android:layout_width="204dp"
+        android:layout_height="42dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="24dp"
+        android:autofillHints="Numero de productos"
+        android:backgroundTint="@color/semiwhite_text"
+        android:ems="10"
+        android:inputType="number"
+        android:textColor="@color/semiwhite_text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.854"
+        app:layout_constraintStart_toEndOf="@+id/txtCantidad"
+        app:layout_constraintTop_toBottomOf="@+id/tbxPrecio" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="287dp"
+        android:layout_height="101dp"
+        android:layout_marginTop="24dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tbxPorcentaje">
+
+        <RadioButton
+            android:id="@+id/radioIVA"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:tag="0.16"
+            android:text="@string/iva"
+            android:textColor="@color/semiwhite_text" />
+
+        <RadioButton
+            android:id="@+id/radioIEPS"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:tag="0.08"
+            android:text="@string/ieps"
+            android:textColor="@color/semiwhite_text" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/txtPorcentaje"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="36dp"
+        android:text="@string/porcentaje_bonificacion"
+        app:layout_constraintStart_toStartOf="parent"
+        android:textColor="@color/semiwhite_text"
+        app:layout_constraintTop_toBottomOf="@+id/txtCantidad" />
+
+    <EditText
+        android:id="@+id/tbxPorcentaje"
+        android:layout_width="156dp"
+        android:layout_height="41dp"
+        android:layout_marginTop="12dp"
+        android:autofillHints="Porcentaje de Descuento"
+        android:backgroundTint="@color/semiwhite_text"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:textColor="@color/semiwhite_text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.56"
+        app:layout_constraintStart_toEndOf="@+id/txtPorcentaje"
+        app:layout_constraintTop_toBottomOf="@+id/tbxCantidad" />
+
+    <Button
+        android:id="@+id/btnDescuento"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:backgroundTint="@color/verde_oscuro"
+        android:text="@string/calcular"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/radioGroup" />
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="409dp"
+        android:layout_height="290dp"
+        android:backgroundTint="@color/azul_oscuro"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnDescuento">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="411dp"
+            android:layout_height="288dp">
+
+            <TextView
+                android:id="@+id/txtBTotal"
+                android:layout_width="161dp"
+                android:layout_height="20dp"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="20dp"
+                android:text="@string/bonificacion_total"
+                android:textColor="@color/semiwhite_text"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txtImporte" />
+
+            <TextView
+                android:id="@+id/txtTotal"
+                android:layout_width="116dp"
+                android:layout_height="20dp"
+                android:layout_marginTop="4dp"
+                android:text="@string/total"
+                android:textColor="@color/semiwhite_text"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.042"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/txtImporte"
+                android:layout_width="113dp"
+                android:layout_height="41dp"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="12dp"
+                android:text="@string/importe"
+                android:textColor="@color/semiwhite_text"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txtTotal" />
+
+            <TextView
+                android:id="@+id/txtBImporte"
+                android:layout_width="190dp"
+                android:layout_height="25dp"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="12dp"
+                android:text="@string/bonificacion_importe"
+                android:textColor="@color/semiwhite_text"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txtBTotal" />
+
+            <TextView
+                android:id="@+id/txtIVA"
+                android:layout_width="112dp"
+                android:layout_height="28dp"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="12dp"
+                android:text="@string/iva_txt"
+                android:textColor="@color/semiwhite_text"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txtBImporte" />
+
+            <TextView
+                android:id="@+id/txtIEPS"
+                android:layout_width="105dp"
+                android:layout_height="32dp"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="16dp"
+                android:text="@string/ieps_txt"
+                android:textColor="@color/semiwhite_text"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txtIVA" />
+
+            <TextView
+                android:id="@+id/txtDiva"
+                android:layout_width="168dp"
+                android:layout_height="22dp"
+                android:layout_marginTop="4dp"
+                android:text="@string/descuento_iva"
+                android:textColor="@color/semiwhite_text"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.508"
+                app:layout_constraintStart_toEndOf="@+id/txtTotal"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/txtDieps"
+                android:layout_width="170dp"
+                android:layout_height="20dp"
+                android:layout_marginTop="32dp"
+                android:text="@string/descuento_ieps"
+                android:textColor="@color/semiwhite_text"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/txtImporte"
+                app:layout_constraintTop_toBottomOf="@+id/txtDiva" />
+
+            <TextView
+                android:id="@+id/txtResultado"
+                android:layout_width="170dp"
+                android:layout_height="21dp"
+                android:layout_marginTop="20dp"
+                android:text="@string/resultado"
+                android:textColor="@color/semiwhite_text"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.147"
+                app:layout_constraintStart_toEndOf="@+id/txtBTotal"
+                app:layout_constraintTop_toBottomOf="@+id/txtDieps" />
+
+            <TextView
+                android:id="@+id/txtDCiva"
+                android:layout_width="206dp"
+                android:layout_height="37dp"
+                android:layout_marginTop="48dp"
+                android:text="@string/iva_con_descuento"
+                android:textColor="@color/semiwhite_text"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.506"
+                app:layout_constraintStart_toEndOf="@+id/txtIVA"
+                app:layout_constraintTop_toBottomOf="@+id/txtResultado" />
+
+            <TextView
+                android:id="@+id/txtDCieps"
+                android:layout_width="210dp"
+                android:layout_height="36dp"
+                android:text="@string/ieps_con_descuento"
+                android:textColor="@color/semiwhite_text"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.532"
+                app:layout_constraintStart_toEndOf="@+id/txtIVA"
+                app:layout_constraintTop_toBottomOf="@+id/txtDCiva"
+                app:layout_constraintVertical_bias="0.312" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
