@@ -15,6 +15,9 @@
         android:theme="@style/Theme.AndroidMaster"
         tools:targetApi="31">
         <activity
+            android:name=".temperatureapp.TemperatureActivity"
+            android:exported="false" />
+        <activity
             android:name=".discountapp.DiscountActivity"
             android:exported="false" />
         <activity

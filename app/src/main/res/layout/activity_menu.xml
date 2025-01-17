@@ -11,36 +11,40 @@
         android:id="@+id/btnSaludApp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="SaludApp"/>
+        android:text="@string/saludapp"/>
 
     <Button
         android:id="@+id/btnIMCApp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="IMC App"/>
+        android:text="@string/imc_app"/>
 
     <Button
         android:id="@+id/btnTODO"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="TODO App"/>
+        android:text="@string/todo_app"/>
 
     <Button
         android:id="@+id/btnSuperhero"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="SuperHero App"/>
+        android:text="@string/superhero_app"/>
 
     <Button
         android:id="@+id/btnSettings"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Settings"/>
+        android:text="@string/settings"/>
 
     <Button
         android:id="@+id/btnDescuentos"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="CALCULAR DESCUENTOS"/>
-
+        android:text="@string/calcular_descuentos1"/>
+    <Button
+        android:id="@+id/btnTemperatura"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/conversor_de_temperatura"/>
 </LinearLayout>

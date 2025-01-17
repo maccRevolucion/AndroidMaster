@@ -26,7 +26,7 @@
     <string name="description_obesidad">Estás MUY por encima de lo óptimo para tu peso y altura.</string>
 
     <!--TodoApp-->
-    <string name="todo_title">Bienvenido, Aris</string>
+    <string name="todo_title">Bienvenido, Macc</string>
     <string name="todo_categories">Categorías:</string>
     <string name="todo_tasks">Tareas:</string>
 
@@ -35,6 +35,8 @@
     <string name="todo_dialog_category_other">Otros</string>
     <string name="todo_dialog_category_personal">Personal</string>
     <string name="todo_dialog_add_task_button">Crear tarea</string>
+
+    <!-- DESCUENTOS APP-->
     <string name="porcentaje_bonificacion">Porcentaje Bonificacion</string>
     <string name="ieps">IEPS</string>
     <string name="iva">IVA</string>
@@ -53,4 +55,26 @@
     <string name="resultado">Resultado:</string>
     <string name="iva_con_descuento">Iva con descuento:</string>
     <string name="ieps_con_descuento">Ieps con descuento:</string>
+
+    <!-- MENU BOTONES -->
+    <string name="saludapp">Saludo App</string>
+    <string name="imc_app">IMC App</string>
+    <string name="todo_app">TO-DO App</string>
+    <string name="superhero_app">SuperHeroe App</string>
+    <string name="settings">AJUSTES</string>
+    <string name="calcular_descuentos1">CALCULAR DESCUENTOS</string>
+    <string name="conversor_de_temperatura">CONVERSOR DE TEMPERATURA</string>
+
+
+    <!-- TEMPERATURA APP -->
+    <string name="conversor_de_temperaturas">CONVERSOR DE TEMPERATURAS</string>
+    <string name="convertir">CONVERTIR</string>
+    <string-array name="spinner_items_temp">
+        <item>Celsius</item>
+        <item>Fahrenheit</item>
+        <item>Kelvin</item>
+    </string-array>
+
+
+
 </resources>

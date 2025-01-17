@@ -9,6 +9,7 @@ import com.macc.androidkotlin.firstapp.FirstAppActivity
 import com.macc.androidkotlin.imccalculator.ImcCalculatorActivity
 import com.macc.androidkotlin.settings.SettingsActivity
 import com.macc.androidkotlin.superheroapp.SuperHeroListActivity
+import com.macc.androidkotlin.temperatureapp.TemperatureActivity
 import com.macc.androidkotlin.todoapp.TodoActivity
 
 class MenuActivity : AppCompatActivity() {
@@ -21,6 +22,7 @@ class MenuActivity : AppCompatActivity() {
         val btnSuperhero = findViewById<Button>(R.id.btnSuperhero)
         val btnSettings = findViewById<Button>(R.id.btnSettings)
         val btnDescuentos = findViewById<Button>(R.id.btnDescuentos)
+        val btnTemperatura = findViewById<Button>(R.id.btnTemperatura)
 
         btnSaludApp.setOnClickListener { navigateToSaludApp() }
         btnImcApp.setOnClickListener { navigateToImcApp() }
@@ -28,6 +30,7 @@ class MenuActivity : AppCompatActivity() {
         btnSuperhero.setOnClickListener { navigateToSuperheroApp() }
         btnSettings.setOnClickListener { navigateToSettings() }
         btnDescuentos.setOnClickListener { navigateToDiscountApp() }
+        btnTemperatura.setOnClickListener { navigateToConvertTemp() }
     }
 
     private fun navigateToSettings() {
@@ -57,6 +60,11 @@ class MenuActivity : AppCompatActivity() {
 
     private fun navigateToDiscountApp(){
         val intent = Intent(this, DiscountActivity::class.java)
+        startActivity(intent)
+    }
+
+    private fun navigateToConvertTemp(){
+        val intent = Intent(this, TemperatureActivity::class.java)
         startActivity(intent)
     }
 }
