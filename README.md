@@ -38,7 +38,5 @@ An Android application developed to practice and demonstrate skills in modern An
 Using MVVM for practical examples and understanding.
 
 ##Screenshots
-row(
 ![68747470733a2f2f692e696d6775722e636f6d2f463672537a73492e706e67](https://github.com/user-attachments/assets/459c1005-c6d0-40e6-9f37-80b563646add)
 ![68747470733a2f2f692e696d6775722e636f6d2f584e7754486a792e706e67](https://github.com/user-attachments/assets/4321675c-6bf1-4ddd-b9b9-29004c6f83c6)
-)
