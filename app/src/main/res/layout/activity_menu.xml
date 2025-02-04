@@ -42,9 +42,12 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/calcular_descuentos1"/>
+
     <Button
         android:id="@+id/btnTemperatura"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/conversor_de_temperatura"/>
+
+
 </LinearLayout>

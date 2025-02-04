@@ -3,8 +3,6 @@ package com.macc.androidkotlin.todoapp
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
-import com.macc.androidkotlin.todoapp.CategoriesViewHolder
-import com.macc.androidkotlin.todoapp.TaskCategory
 import com.macc.androidkotlin.R
 
 class CategoriesAdapter(private val categories: List<TaskCategory>, private val onItemSelected:(Int) -> Unit) :

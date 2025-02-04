@@ -8,8 +8,6 @@ import android.widget.TextView
 import androidx.core.content.ContextCompat
 import androidx.recyclerview.widget.RecyclerView
 import com.macc.androidkotlin.R
-import com.macc.androidkotlin.todoapp.Task
-import com.macc.androidkotlin.todoapp.TaskCategory
 
 class TasksViewHolder(view: View) : RecyclerView.ViewHolder(view) {
 

@@ -1,7 +1,5 @@
 package com.macc.androidkotlin.superheroapp
 
-import com.macc.androidkotlin.superheroapp.SuperHeroDataResponse
-import com.macc.androidkotlin.superheroapp.SuperHeroDetailResponse
 import retrofit2.Response
 import retrofit2.http.GET
 import retrofit2.http.Path

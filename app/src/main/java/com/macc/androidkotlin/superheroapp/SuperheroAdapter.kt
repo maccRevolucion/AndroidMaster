@@ -3,8 +3,6 @@ package com.macc.androidkotlin.superheroapp
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
-import com.macc.androidkotlin.superheroapp.SuperheroItemResponse
-import com.macc.androidkotlin.superheroapp.SuperheroViewHolder
 import com.macc.androidkotlin.R
 
 class SuperheroAdapter(

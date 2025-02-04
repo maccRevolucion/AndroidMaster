@@ -5,7 +5,6 @@ import android.widget.TextView
 import androidx.cardview.widget.CardView
 import androidx.core.content.ContextCompat
 import androidx.recyclerview.widget.RecyclerView
-import com.macc.androidkotlin.todoapp.TaskCategory
 import com.macc.androidkotlin.R
 
 class CategoriesViewHolder(view: View) : RecyclerView.ViewHolder(view) {

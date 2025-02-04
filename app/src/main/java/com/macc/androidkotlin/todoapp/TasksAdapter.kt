@@ -3,7 +3,6 @@ package com.macc.androidkotlin.todoapp
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
-import com.macc.androidkotlin.todoapp.TasksViewHolder
 import com.macc.androidkotlin.R
 
 class TasksAdapter(var tasks: List<Task>, private val onTaskSelected: (Int) -> Unit) :
